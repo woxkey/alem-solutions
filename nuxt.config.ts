@@ -13,4 +13,5 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: "page", mode: "out-in" },
   },
+  css: ["@fortawesome/fontawesome-svg-core/styles.css"],
 });

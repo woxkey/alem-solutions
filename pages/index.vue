@@ -1,11 +1,11 @@
 <template>
   <div class="container">
-    <div>
+    <div class="container__top">
       <h3>We are Alem Solutions</h3>
       <h1>We help ideas to change the world</h1>
     </div>
     <div>
-      <img class="bg-left-top" src="~/assets/images/bg-left-top.png" alt="" />
+      <!-- <img class="bg-left-top" src="~/assets/images/bg-left-top.png" alt="" />
       <img
         class="bg-left-bottom"
         src="~/assets/images/bg-left-bottom.png"
@@ -20,31 +20,25 @@
         class="bg-center-center"
         src="~/assets/images/bg-center-center.png"
         alt=""
-      />
-      <img
+      /> -->
+      <!-- <img
         class="bg-center-bottom"
         src="~/assets/images/bg-center-bottom.png"
         alt=""
-      />
-      <div class="test-overflow">
-        <img
-          class="bg-right-top"
-          src="~/assets/images/bg-right-top.png"
-          alt=""
-        />
-        <img
-          class="bg-right-center"
-          src="~/assets/images/bg-right-center.png"
-          alt=""
-        />
-        <img
+      /> -->
+      <!-- <img class="bg-right-top" src="~/assets/images/bg-right-top.png" alt="" />
+      <img
+        class="bg-right-center"
+        src="~/assets/images/bg-right-center.png"
+        alt=""
+      /> -->
+      <!-- <img
           class="bg-right-bottom"
           src="~/assets/images/bg-right-bottom.png"
           alt=""
-        />
-      </div>
+        /> -->
     </div>
-  </div>
+    </div>
 </template>
 
 <script lang="ts" setup></script>
@@ -53,6 +47,15 @@
 h1 {
   font-size: 140px;
   margin: 0;
+}
+
+.container__top {
+  padding-bottom: 600px;
+}
+
+.about-content {
+  display: flex;
+  gap: 4rem;
 }
 
 h3 {
