@@ -58,34 +58,52 @@
 
   &__top {
     text-align: start;
+    position: relative;
+    z-index: 2;
   }
 
   &__title {
     font-family: "RoadRadio-Bold", sans-serif;
     font-size: 1.5em;
     color: $secondary;
-    padding-left: 7vw;
+    padding-left: 6.25em;
   }
 
   &__description {
     font-family: "RoadRadio-Black", sans-serif;
     font-size: 8.75em;
     margin: 0;
-    position: relative;
-    z-index: 2;
 
     & > span:first-child {
-      padding-left: 15vw;
+      padding-left: 2em;
       color: transparent;
       -webkit-text-stroke: 1px white;
+      position: relative;
+
+      &::before {
+        display: none;
+        content: "";
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        width: 40%;
+        height: 50%;
+        background-color: $secondary;
+        border-radius: 50%;
+        mix-blend-mode: saturation;
+        z-index: 2;
+      }
     }
 
     & > span:nth-of-type(2) {
-      padding-left: 7vw;
+      padding-left: 1.07em;
     }
 
     & > span:nth-of-type(3) {
-      padding-left: 15vw;
+      padding-left: 2em;
+    }
+
+    & > span:last-child {
       color: transparent;
       -webkit-text-stroke: 1px white;
     }
