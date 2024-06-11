@@ -1,11 +1,19 @@
 <template>
-  <div class="container">
-    <div class="container__top">
-      <h3>We are Alem Solutions</h3>
-      <h1>We help ideas to change the world</h1>
+  <section class="home">
+    <div class="home__top">
+      <h3 class="home__title">We are Alem Solutions</h3>
+      <h1 class="home__description">
+        <span>We help</span>
+        <br />
+        <span>ideas</span>
+        <br />
+        <span>to change</span>
+        <br />
+        <span>the world</span>
+      </h1>
     </div>
     <div>
-      <!-- <img class="bg-left-top" src="~/assets/images/bg-left-top.png" alt="" />
+      <img class="bg-left-top" src="~/assets/images/bg-left-top.png" alt="" />
       <img
         class="bg-left-bottom"
         src="~/assets/images/bg-left-bottom.png"
@@ -20,111 +28,136 @@
         class="bg-center-center"
         src="~/assets/images/bg-center-center.png"
         alt=""
-      /> -->
-      <!-- <img
+      />
+      <img
         class="bg-center-bottom"
         src="~/assets/images/bg-center-bottom.png"
         alt=""
-      /> -->
-      <!-- <img class="bg-right-top" src="~/assets/images/bg-right-top.png" alt="" />
+      />
+      <img class="bg-right-top" src="~/assets/images/bg-right-top.png" alt="" />
       <img
         class="bg-right-center"
         src="~/assets/images/bg-right-center.png"
         alt=""
-      /> -->
-      <!-- <img
-          class="bg-right-bottom"
-          src="~/assets/images/bg-right-bottom.png"
-          alt=""
-        /> -->
+      />
+      <img
+        class="bg-right-bottom"
+        src="~/assets/images/bg-right-bottom.png"
+        alt=""
+      />
     </div>
-    </div>
+  </section>
 </template>
 
 <script lang="ts" setup></script>
 
 <style scoped lang="scss">
-h1 {
-  font-size: 140px;
-  margin: 0;
-}
-
-.container__top {
-  padding-bottom: 600px;
-}
-
-.about-content {
+.home {
   display: flex;
-  gap: 4rem;
+  justify-content: center;
+
+  &__top {
+    text-align: start;
+  }
+
+  &__title {
+    font-family: "RoadRadio-Bold", sans-serif;
+    font-size: 1.5em;
+    color: $secondary;
+    padding-left: 7vw;
+  }
+
+  &__description {
+    font-family: "RoadRadio-Black", sans-serif;
+    font-size: 8.75em;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+
+    & > span:first-child {
+      padding-left: 15vw;
+      color: transparent;
+      -webkit-text-stroke: 1px white;
+    }
+
+    & > span:nth-of-type(2) {
+      padding-left: 7vw;
+    }
+
+    & > span:nth-of-type(3) {
+      padding-left: 15vw;
+      color: transparent;
+      -webkit-text-stroke: 1px white;
+    }
+  }
 }
 
-h3 {
-  font-size: 24px;
+.bg-left-top,
+.bg-left-bottom,
+.bg-center-top,
+.bg-center-center,
+.bg-center-bottom,
+.bg-right-top,
+.bg-right-center,
+.bg-right-bottom {
+  position: absolute;
+  object-fit: cover;
+  z-index: 1;
 }
 
 .bg-left-top {
-  position: absolute;
-  top: 5%;
+  top: 5vh;
   left: 0;
-  width: 591px;
-  height: 614px;
+  width: 30vw;
+  height: 60vh;
 }
 
 .bg-left-bottom {
-  position: absolute;
-  top: calc(10% + 614px);
+  top: 70vh;
   left: 0;
-  width: 591px;
-  height: 328px;
+  width: 30vw;
+  height: 30vh;
 }
 
 .bg-center-top {
-  position: absolute;
-  top: 0;
-  left: 38%;
-  width: 651px;
-  height: 425px;
-  z-index: -100;
+  top: 0vh;
+  left: 35vw;
+  width: 30vw;
+  height: 40vh;
 }
 
 .bg-center-center {
-  position: absolute;
-  top: calc(4rem + 425px);
-  left: 38%;
-  width: 651px;
-  height: 490px;
+  top: 45vh;
+  left: 35vw;
+  width: 30vw;
+  height: 30vh;
 }
 
 .bg-center-bottom {
-  position: absolute;
-  top: calc(4rem + 4rem + 425px + 490px);
-  left: 38%;
-  width: 651px;
-  height: 401px;
+  top: 80vh;
+  left: 35vw;
+  width: 30vw;
+  height: 30vh;
 }
 
 .bg-right-top {
-  position: absolute;
-  top: 5%;
-  left: 80%;
-  width: 594px;
-  height: 336px;
-  z-index: -100;
+  top: 10vh;
+  left: calc(100% - 30vw);
+  width: 30vw;
+  height: 30vh;
 }
 
 .bg-right-center {
-  position: absolute;
-  top: calc(4rem + 5% + 336px);
-  left: 80%;
-  width: 594px;
-  height: 448px;
+  top: 45vh;
+  left: calc(100% - 30vw);
+  width: 30vw;
+  height: 30vh;
 }
 
 .bg-right-bottom {
-  position: absolute;
-  top: calc(4rem + 4rem + 5% + 336px + 448px);
-  left: 80%;
-  width: 594px;
-  height: 447px;
+  top: 80vh;
+  left: calc(100% - 30vw);
+  width: 30vw;
+  height: 30vh;
 }
 </style>

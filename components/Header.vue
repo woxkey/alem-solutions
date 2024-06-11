@@ -41,21 +41,23 @@
 <style lang="scss" scoped>
 .header {
   display: flex;
-  max-width: 1710px;
-  margin: 0 auto;
+  // max-width: 1710px;
+  // margin: 0 auto;
   justify-content: space-between;
-  padding: 2rem 3rem;
+  padding: 2em 3em;
+  position: relative;
+  z-index: 2;
 
   &__nav-section {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.5em;
     align-items: center;
   }
 
   &__ul {
     display: flex;
     list-style: none;
-    gap: 1.5rem;
+    gap: 1.5em;
   }
 
   &__link {
@@ -75,14 +77,14 @@
     border: 1px solid $secondary;
     background: transparent;
     color: $secondary;
-    font-size: 17px;
-    padding: 10px 20px;
-    margin-right: 1rem;
+    font-size: 1.063em;
+    padding: 1em 1.5em;
+    margin-right: 1em;
     cursor: pointer;
     text-transform: uppercase;
 
     & > span {
-      margin-right: 10px;
+      margin-right: 1em;
       font-family: "RoadRadio", sans-serif;
     }
   }
@@ -93,12 +95,12 @@
     background: none;
     color: $primary;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.125em;
     display: flex;
     align-items: center;
 
     & > svg {
-      margin-right: 10px;
+      margin-right: 1em;
     }
 
     & > span {
