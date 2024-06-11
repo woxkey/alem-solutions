@@ -6,4 +6,8 @@
 
 <script lang="ts" setup></script>
 
-<style></style>
+<style scoped lang="scss">
+p {
+  color: white;
+}
+</style>
