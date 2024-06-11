@@ -1,7 +1,8 @@
 <template>
   <header>
     <NuxtLink to="/">
-      <img src="/images/logo.svg" alt="logo" />
+      <!-- <img src="/images/logo.svg" alt="logo" /> -->
+      ALEM SOLUTIONS
     </NuxtLink>
 
     <div>
@@ -31,6 +32,11 @@ header {
   margin: 0 auto;
   justify-content: space-between;
   padding: 2rem 1.5rem;
+}
+
+header > a {
+  text-decoration: none;
+  color: $primary;
 }
 
 header > div {
